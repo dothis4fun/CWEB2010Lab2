@@ -5,6 +5,11 @@ public abstract class Resident {
 	
 	Resident(){
 		SetId();
+		SetMonthlyRent();
+	}
+	
+	public static enum Type{
+		Athlete, Scholarship, Worker
 	}
 	 private static ArrayList<Integer> idNumbers = new ArrayList<Integer>();
 	 private int Id;
